@@ -104,7 +104,7 @@ const About = () => {
     </div>
   );
 };
-//build productions update
+//build productions updated
 export default About;
 
 
