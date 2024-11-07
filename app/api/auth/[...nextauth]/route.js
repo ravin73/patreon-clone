@@ -11,12 +11,14 @@ import Payment from '@/models/Payment';
  
 
 export const authoptions =  NextAuth({
+  secret: process.env.NEXTAUTH_SECRET,
     providers: [
       // OAuth authentication providers...
       GitHubProvider({
         clientId: process.env.GITHUB_ID,
         clientSecret: process.env.GITHUB_SECRET
       }),
+      
     //   AppleProvider({
     //     clientId: process.env.APPLE_ID,
     //     clientSecret: process.env.APPLE_SECRET
